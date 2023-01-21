@@ -1,0 +1,222 @@
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffa37c;
+    outline: 1px solid #ffa37c;
+    border-radius: 20px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+
+#MainSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e0dc;
+}
+
+#ContactSection {
+    position: relative;
+    width: 500px;
+    height: 750px;
+    display: grid;
+    grid-template-rows: 80px 1fr 40px;
+    background-color: #fdf5ee;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px #888888;
+}
+
+#NavBar {
+    position: relative;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#NavBar::before,
+#NavBar::after {
+    position: absolute;
+    content: "";
+    background-color: #ffa37c;
+}
+
+#NavBar::after {
+    width: 300px;
+    height: 2px;
+    bottom: 0px;
+    left: calc((500px - 300px) / 2);
+}
+
+#NavBar::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: calc(0px - 14px);
+    left: calc((500px - 30px) / 2);
+}
+
+
+h3 {
+    color: #5b5956;
+}
+
+h3 span {
+    color: #f17f67;
+}
+
+#Search,
+.DeleteButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f17f67;
+    border-radius: 5px;
+}
+
+#Search {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#SearchSection {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#SearchSection input {
+    width: 140px;
+    border: 1px solid #f17f67;
+    border-radius: 5px;
+    height: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#ContactList {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+#Form {
+    padding: 80px 35px;
+    row-gap: 40px;
+    display: grid;
+    grid-template-rows: repeat(3, fr);
+    overflow: hidden;
+}
+
+#Form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 95%;
+    height: 50px;
+}
+
+
+#ContactList>p {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#List {
+    row-gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Contact {
+    margin-bottom: 10px;
+    padding: 0px 15px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 2fr repeat(2, 1fr) auto;
+    background-color: #eae5e1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.Contact div {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ContactIcon {
+    margin: 0px;
+    padding: 0px;
+}
+
+#EmptyDiv {
+    text-align: center;
+    font-style: oblique;
+}
+
+#Buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Buttons #AddButton {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6ac8d2;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.FullName,
+.Phone .city {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#Buttons .SortButtons {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa37c;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 20px;
+}
